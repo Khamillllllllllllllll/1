@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khamil Zhen Jie | Entrepreneurial Mind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #3b82f6;
+            border: 4px solid #e0e7ff;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 33px;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background: #e0e7ff;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-xl font-bold gradient-text">Khamil Zhen Jie</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="#journey" class="text-gray-700 hover:text-blue-600 transition">Journey</a>
+                    <a href="#passions" class="text-gray-700 hover:text-blue-600 transition">Passions</a>
+                    <a href="#goals" class="text-gray-700 hover:text-blue-600 transition">Goals</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4 shadow-lg">
+            <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600 transition">About</a>
+            <a href="#journey" class="block py-2 text-gray-700 hover:text-blue-600 transition">Journey</a>
+            <a href="#passions" class="block py-2 text-gray-700 hover:text-blue-600 transition">Passions</a>
+            <a href="#goals" class="block py-2 text-gray-700 hover:text-blue-600 transition">Goals</a>
+            <a href="#contact" class="block mt-2 bg-blue-600 text-white px-4 py-2 rounded-full text-center hover:bg-blue-700 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                    Hi, I'm <span class="gradient-text">Khamil Zhen Jie</span>
+                </h1>
+                <h2 class="text-2xl md:text-3xl text-gray-600 mb-6">
+                    Entrepreneurial Mind | Business Student | Problem Solver
+                </h2>
+                <p class="text-gray-700 mb-8 max-w-lg">
+                    A passionate debater and future entrepreneur who believes in perseverance, communication, and creating value through business.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Let's Connect</a>
+                    <a href="#journey" class="border border-blue-600 text-blue-600 px-6 py-3 rounded-full hover:bg-blue-50 transition">My Journey</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-100 shadow-xl floating">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
+                        <span class="text-white text-6xl font-bold">KZJ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                <span class="gradient-text">Who Am I?</span>
+            </h2>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2 bg-gray-50 p-8 rounded-xl shadow-sm">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Personality & Values</h3>
+                    <div class="mb-6">
+                        <div class="flex items-center mb-2">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                                <i class="fas fa-comments text-blue-600"></i>
+                            </div>
+                            <h4 class="text-lg font-medium">ENTP - The Debater</h4>
+                        </div>
+                        <p class="text-gray-700">
+                            I thrive on exchanging viewpoints and thinking on my feet. My personality type reflects my love for problem-solving, leadership, and continuous learning.
+                        </p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex items-center mb-2">
+                            <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mr-3">
+                                <i class="fas fa-hands-helping text-purple-600"></i>
+                            </div>
+                            <h4 class="text-lg font-medium">Core Values</h4>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Perseverance</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Communication</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Learning</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Problem-solving</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex items-center mb-2">
+                            <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                                <i class="fas fa-trophy text-green-600"></i>
+                            </div>
+                            <h4 class="text-lg font-medium">Proudest Achievement</h4>
+                        </div>
+                        <p class="text-gray-700">
+                            Gaining admission to Ngee Ann Poly's Common Business Program, Singapore's most competitive business school, despite challenges in my secondary school environment.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 bg-gray-50 p-8 rounded-xl shadow-sm">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Unique Strengths</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex items-center mb-2">
+                            <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center mr-3">
+                                <i class="fas fa-users text-indigo-600"></i>
+                            </div>
+                            <h4 class="text-lg font-medium">Connection Builder</h4>
+                        </div>
+                        <p class="text-gray-700">
+                            I have a unique ability to build connections with anyone. In both classroom and life, I believe communication is the most critical skill that can make or break opportunities.
+                        </p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex items-center mb-2">
+                            <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center mr-3">
+                                <i class="fas fa-store text-red-600"></i>
+                            </div>
+                            <h4 class="text-lg font-medium">Entrepreneurial Spirit</h4>
+                        </div>
+                        <p class="text-gray-700">
+                            From selling candy in primary school to planning a thrift store business now, I love creating value from scratch. My first business taught me about customer loyalty, pricing strategies, and smart sourcing.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <div class="flex items-center mb-2">
+                            <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center mr-3">
+                                <i class="fas fa-lightbulb text-yellow-600"></i>
+                            </div>
+                            <h4 class="text-lg font-medium">Why Common Business Program?</h4>
+                        </div>
+                        <p class="text-gray-700">
+                            I chose CBP to explore different business paths before specializing. It gives me the foundation I need to one day run my own business while keeping my options open.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="journey" class="py-16 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                <span class="gradient-text">My Journey</span>
+            </h2>
+            
+            <div class="relative timeline pl-16">
+                <!-- Timeline Item 1 -->
+                <div class="relative timeline-item mb-12">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-blue-500">
+                        <div class="flex items-center mb-2">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                                <i class="fas fa-candy-cane text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">First Business Venture</h3>
+                        </div>
+                        <p class="text-gray-700 mb-3">
+                            Started selling candy in primary school, learning about customer relationships, pricing, and supply chain management the hard way.
+                        </p>
+                        <div class="text-sm text-gray-500">
+                            <i class="far fa-clock mr-1"></i> Primary School Days
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 2 -->
+                <div class="relative timeline-item mb-12">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-purple-500">
+                        <div class="flex items-center mb-2">
+                            <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mr-4">
+                                <i class="fas fa-school text-purple-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Overcoming Challenges</h3>
+                        </div>
+                        <p class="text-gray-700 mb-3">
+                            Stayed focused through distractions in secondary school, developing perseverance and self-discipline that led to my admission to Ngee Ann Poly.
+                        </p>
+                        <div class="text-sm text-gray-500">
+                            <i class="far fa-clock mr-1"></i> Secondary School
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 3 -->
+                <div class="relative timeline-item mb-12">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-green-500">
+                        <div class="flex items-center mb-2">
+                            <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mr-4">
+                                <i class="fas fa-graduation-cap text-green-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Common Business Program</h3>
+                        </div>
+                        <p class="text-gray-700 mb-3">
+                            Currently exploring different business disciplines before specializing, with a focus on entrepreneurship, marketing, and finance.
+                        </p>
+                        <div class="text-sm text-gray-500">
+                            <i class="far fa-clock mr-1"></i> Present - Ngee Ann Polytechnic
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 4 -->
+                <div class="relative timeline-item">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-yellow-500">
+                        <div class="flex items-center mb-2">
+                            <div class="w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center mr-4">
+                                <i class="fas fa-store-alt text-yellow-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Thrift Store Venture</h3>
+                        </div>
+                        <p class="text-gray-700 mb-3">
+                            Planning and creating content for a thrift store business on TikTok and Instagram, applying digital marketing skills in a real-world context.
+                        </p>
+                        <div class="text-sm text-gray-500">
+                            <i class="far fa-clock mr-1"></i> Current Side Project
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Passions Section -->
+    <section id="passions" class="py-16 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                <span class="gradient-text">My Passions</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Passion 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-chart-line text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Business & Entrepreneurship</h3>
+                    <p class="text-gray-700 text-center">
+                        From candy sales to thrift stores, I love creating value through business. The process of identifying problems and crafting solutions energizes me.
+                    </p>
+                </div>
+                
+                <!-- Passion 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-running text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Floorball & Fitness</h3>
+                    <p class="text-gray-700 text-center">
+                        As part of my school's floorball team, I've developed teamwork, discipline, and leadership skills that translate directly to business.
+                    </p>
+                </div>
+                
+                <!-- Passion 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-dumbbell text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Gym & Personal Growth</h3>
+                    <p class="text-gray-700 text-center">
+                        Regular gym sessions teach me about consistency, pushing limits, and the compound effect of small improvements over time.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl p-8 text-white">
+                <h3 class="text-2xl font-bold mb-4">Career Paths I'm Exploring</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white bg-opacity-10 p-4 rounded-lg backdrop-blur-sm">
+                        <h4 class="font-semibold mb-2">Business Development Executive</h4>
+                        <p class="text-blue-100">
+                            To build partnerships, identify opportunities, and understand business operations in fast-paced industries.
+                        </p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-4 rounded-lg backdrop-blur-sm">
+                        <h4 class="font-semibold mb-2">Digital Marketing Executive</h4>
+                        <p class="text-blue-100">
+                            To learn branding, audience engagement, and how to effectively promote products and services online.
+                        </p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-4 rounded-lg backdrop-blur-sm">
+                        <h4 class="font-semibold mb-2">Product Manager</h4>
+                        <p class="text-blue-100">
+                            To develop problem-solving skills, work cross-functionally, and understand the product lifecycle.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section id="goals" class="py-16 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                <span class="gradient-text">My Future Goals</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-2xl font-semibold mb-4">Short-Term (1-3 Years)</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-check text-blue-600 text-xs"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-700">Excel in the Common Business Program, exploring different business disciplines</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-check text-blue-600 text-xs"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-700">Launch and grow my thrift store business, applying digital marketing skills</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-check text-blue-600 text-xs"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-700">Secure a meaningful internship at a startup or SME to gain hands-on experience</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-2xl font-semibold mb-4">Long-Term (5-10 Years)</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-check text-purple-600 text-xs"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-700">Run my own business that solves real problems and creates value for others</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-check text-purple-600 text-xs"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-700">Potentially pursue further education at NUS or SMU Business School</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-check text-purple-600 text-xs"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-700">Continuously learn through courses and real-world experiences</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="bg-gradient-to-r from-purple-500 to-blue-600 rounded-xl p-8 text-white">
+                <h3 class="text-2xl font-bold mb-6">Courses & Specializations I'm Considering</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white bg-opacity-10 p-4 rounded-lg backdrop-blur-sm">
+                        <h4 class="font-semibold mb-2">Business Studies</h4>
+                        <p class="text-purple-100">
+                            Focused on entrepreneurship, marketing, and management with practical modules like Marketing Strategy and Integrated Business Experience.
+                        </p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-4 rounded-lg backdrop-blur-sm">
+                        <h4 class="font-semibold mb-2">Accountancy</h4>
+                        <p class="text-purple-100">
+                            To understand financial management with modules like Financial Accounting and Cost and Managerial Accounting.
+                        </p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-4 rounded-lg backdrop-blur-sm">
+                        <h4 class="font-semibold mb-2">Banking & Finance</h4>
+                        <p class="text-purple-100">
+                            To learn about raising capital and managing risks through Investment Management and Banking Products modules.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                <span class="gradient-text">Let's Connect</span>
+            </h2>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm h-full">
+                        <h3 class="text-2xl font-semibold mb-6">Get In Touch</h3>
+                        
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-2">Your Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition w-full md:w-auto">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm h-full">
+                        <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Email</h4>
+                                    <p class="text-gray-700">khamil.zhenjie@example.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Location</h4>
+                                    <p class="text-gray-700">Singapore</p>
+                                    <p class="text-gray-700">Ngee Ann Polytechnic, TC02</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-share-alt text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Social Media</h4>
+                                    <div class="flex space-x-4 mt-2">
+                                        <a href="#" class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-200 transition">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#" class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 hover:bg-pink-200 transition">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a href="#" class="w-10 h-10 rounded-full bg-blue-400 flex items-center justify-center text-white hover:bg-blue-500 transition">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-gray-700 transition">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="#" class="text-xl font-bold gradient-text">Khamil Zhen Jie</a>
+                    <p class="text-gray-400 mt-2">Entrepreneurial Mind | Business Student | Problem Solver</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#about" class="text-gray-400 hover:text-white transition">About</a>
+                    <a href="#journey" class="text-gray-400 hover:text-white transition">Journey</a>
+                    <a href="#passions" class="text-gray-400 hover:text-white transition">Passions</a>
+                    <a href="#goals" class="text-gray-400 hover:text-white transition">Goals</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2023 Khamil Zhen Jie. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('#mobile-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Smooth scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
